@@ -1,0 +1,17 @@
+.lb-select-sort {
+    padding: 10px 10px;
+    font-size: 12px;
+}
+
+.add-task-form {
+    float: right;
+    padding-top: 20px;
+}
+
+.task-list {
+    padding-top: 20px;
+}
+
+.task-input {
+    width: 300px;
+}

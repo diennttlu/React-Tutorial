@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Project - To Do List ReactJS</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" type="button">Search</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Sort by <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a role="button">Name ASC</a></li>
+                        <li><a role="button">Name DESC</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a role="button">Level ASC</a></li>
+                        <li><a role="button">Level DESC</a></li>
+                    </ul>
+                    
+                    <span class="label label-success" style="padding: 10px 10px; font-size: 12px;">
+                        NAME - DESC
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                <button type="button" class="btn btn-info btn-block">Add Task</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-6 col-md-6">
+                <form action="" method="post" class="form-inline" style="float: right; padding: 20px 0px;">
+                    <div class="form-group">
+                        <label class="sr-only" for="">Name</label>
+                        <input type="text" class="form-control" placeholder="Task Name" ref="task_name" style="width: 300px;">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="">Level</label>
+                        <select name="ds" id="inputDs" class="form-control" required="required" ref="task_level">
+                            <option value="0">Small</option>
+                            <option value="1">Medium</option>
+                            <option value="2">High</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-success">
+                      <div class="panel-heading">
+                            <h3 class="panel-title">List Task</h3>
+                      </div>
+                      <div class="panel-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Task</th>
+                                        <th>Level</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis.</td>
+                                        <td><span class="label label-danger">High</span></td>
+                                        <td>
+                                            <button class="btn btn-default">Edit</button>
+                                            <button class="btn btn-default">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis.</td>
+                                        <td><span class="label label-default">Small</span></td>
+                                        <td>
+                                            <button class="btn btn-default">Edit</button>
+                                            <button class="btn btn-default">Delete</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, perferendis.</td>
+                                        <td><span class="label label-info">Medium</span></td>
+                                        <td>
+                                            <button class="btn btn-default">Edit</button>
+                                            <button class="btn btn-default">Delete</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
